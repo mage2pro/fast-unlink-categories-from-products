@@ -7,7 +7,7 @@ The problem is described here:
 ```
 bin/magento maintenance:enable
 composer clear-cache
-composer require mage2pro/unlink:*
+composer require mage2pro/fast-unlink-categories-from-products:*
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
 rm -rf pub/static/* && bin/magento setup:static-content:deploy en_US <additional locales, e.g.: de_DE>
@@ -18,7 +18,7 @@ bin/magento maintenance:disable
 ```
 bin/magento maintenance:enable
 composer clear-cache
-composer update mage2pro/unlink
+composer update mage2pro/fast-unlink-categories-from-products
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
 rm -rf pub/static/* && bin/magento setup:static-content:deploy en_US <additional locales, e.g.: de_DE>
